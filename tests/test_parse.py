@@ -13,7 +13,13 @@ class TestParse(unittest.TestCase):
             "json": "2.0",
             "id": 42,
             "method": "foo_bazBaz",
-            "params": [13, {"xyzzy": 666, "inky": ["pinky", "blinky", "clyde"],},],
+            "params": [
+                13,
+                {
+                    "xyzzy": 666,
+                    "inky": ["pinky", "blinky", "clyde"],
+                },
+            ],
         }
 
     def test_from_dict(self):
